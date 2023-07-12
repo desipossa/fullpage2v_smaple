@@ -61,7 +61,7 @@
 }
 
 .section.on {
-    font-size: 100px;
+    color: tomato;
     transition: 0.5s;
 }
 

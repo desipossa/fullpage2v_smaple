@@ -4,11 +4,13 @@ $(function () {
         anchors: ['main', 'sub01', 'sub02'],
         navigation: false,
         css3: false,
+        //반응형에서 fullpage 안하기.
         responsiveWidth: 700,
+        //넘치는 부분 스크롤 하기.
         scrollOverflow: true,
-        //easing: 'easeInOutCubic',
+        //아랜 속도 부분... https://jqueryui.com/easing/ 참고.
+        easing: 'easeOutBounce',
         //easingCss3: 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',
-        //responsiveHeight: 1200,
         afterRender: function () {
             $('.Main__content .section').eq(0).addClass('on');
         },
